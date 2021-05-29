@@ -1,2 +1,2 @@
 # True-or-False-Quiz
-True or False Quiz Game Developed Using Flutter
+True or False Quiz Application is Developed Using Flutter
