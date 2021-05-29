@@ -36,7 +36,7 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
-  List<Icon> scorekeeper = [];
+  List<Icon> scorekeeper = [Icon(Icons.chat_bubble,color: Colors.black26,)];
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = quizBrain.getQuestionAnswer();
 
@@ -51,7 +51,7 @@ class _QuizPageState extends State<QuizPage> {
         quizBrain.reset();
 
         //TODO Step 4 Part D - empty out the scoreKeeper.
-        scorekeeper = [];
+        scorekeeper = [Icon(Icons.chat_bubble,color: Colors.black26,)];
       } else {
         if (userPickedAnswer == correctAnswer) {
           print('user got it right');
@@ -123,7 +123,11 @@ class _QuizPageState extends State<QuizPage> {
           ),
         ),
         Row(
+
           children: scorekeeper,
+
+
+
         )
       ],
     );
